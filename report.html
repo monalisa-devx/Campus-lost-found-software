@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>CampusFind</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="report.html">Report</a>
+        <a href="browse.html">Browse</a>
+        <a href="manage.html">Manage</a>
+    </div>
+</nav>
+
+<div class="form-container">
+
+    <h1>Report an Item</h1>
+    <p>Give details about the lost or found item.</p>
+
+    <form id="reportForm">
+
+        <label>Item Name</label>
+        <input type="text" id="itemName"
+        placeholder="Example: Water Bottle" required>
+
+        <label>Report Type</label>
+        <select id="itemType">
+            <option value="Lost">Lost Item</option>
+            <option value="Found">Found Item</option>
+        </select>
+
+        <label>Category</label>
+        <select id="category">
+            <option>Electronics</option>
+            <option>Books</option>
+            <option>Accessories</option>
+            <option>Documents</option>
+            <option>Others</option>
+        </select>
+
+        <label>Location</label>
+        <input type="text" id="location"
+        placeholder="Where was it lost/found?" required>
+
+        <label>Description</label>
+        <textarea id="description"
+        placeholder="Describe the item"></textarea>
+
+        <button type="submit">Submit Report</button>
+
+    </form>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
